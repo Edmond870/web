@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GS Bumba TSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="x-icon" href="Logo.bmb.png">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0e0e0e;
+color:white;
+}
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 60px;
+background:linear-gradient(90deg,#0d47a1,#14f31f);
+}
+
+.logo{
+height:80px;
+width:80px;
+}
+
+.title{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#fffb00;
+}
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+gap: 30px;
+}
+
+.hero > div {
+flex: 1;
+}
+
+.hero h2{
+font-size:40px;
+color:#06fdbf;
+margin-bottom:20px;
+min-height: 100px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+color:#f0f0f0;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:#06fdbf;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#fffb00;
+}
+
+.banner img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+footer{
+background:#030303;
+text-align:center;
+padding:25px;
+margin-top:40px;
+border-top:3px solid #06fdbf;
+}
+
+footer p{
+margin:5px;
+font-size:14px;
+}
+
+footer nav{
+margin-top:10px;
+}
+
+footer nav a{
+color:#fffb00;
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
+}
+
+footer nav a:hover{
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="BMB.png" class="logo">
+<div class="title">GS Bumba TSS</div>
+<nav>
+<a href="home.html">Home</a>
+<a href="AboutUs.html">About Us</a>
+<a href="Staff.html">Staff</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Trainers.html">Trainers</a>
+<a href="Courses.html">Courses</a>
+<a href="annoucement.html">Announcement</a>
+<a href="Facility.html">Facilities</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2 id="type"></h2>
+<p>
+GS Bumba TSS provides students with quality education, knowledge,
+skills and Rwandan values required on the labor market. The school
+also prepares learners for higher education while providing religious
+and spiritual guidance.
+</p>
+<a href="AboutUs.html" class="btn">Learn More</a>
+</div>
+
+<div class="banner">
+<img src="Banner@.png" alt="School Banner">
+</div>
+</section>
+
+<script>
+const text="Welcome to GS Bumba TSS. You are lucky to choose this school because we provide quality education, practical skills and values needed for the future.";
+let i=0;
+const speed=50;
+const el=document.getElementById("type");
+
+function typeWriter(){
+if(i<text.length){
+el.innerHTML+=text.charAt(i);
+i++;
+setTimeout(typeWriter,speed);
+}
+}
+typeWriter();
+</script>
+
+<footer>
+<p>© 2026 GS Bumba TSS — All Rights Reserved</p>
+<p>Designed by <strong>Edmond Gikundiro</strong></p>
+<p>Email: gsbumba2011@yahoo.fr / gsbumba.rutsiro@gmail.com</p>
+<p>Tel: +250 788 787 786</p>
+<p>Location: Rutsiro District, Western Province, Rwanda</p>
+<nav>
+<a href="home.html">Home</a>
+<a href="AboutUs.html">About Us</a>
+<a href="Staff.html">Staff</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Trainers.html">Trainers</a>
+<a href="Courses.html">Courses</a>
+<a href="annoucement.html">Announcement</a>
+<a href="Facility.html">Facilities</a>
+</nav>
+</footer>
+
+</body>
+</html>
