@@ -56,50 +56,61 @@ height:80vh;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
-padding:40px;
-gap: 30px;
+padding:40px 80px;
+gap:40px;
 }
 
-.hero > div {
-flex: 1;
+.hero > div{
+flex:1;
 }
 
 .hero h2{
-font-size:40px;
+font-size:28px;
 color:#06fdbf;
 margin-bottom:20px;
-min-height: 100px;
+min-height:70px;
 }
 
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:18px;
+.textbox{
+background:#141414;
+padding:20px;
+border-radius:8px;
+border-left:4px solid #06fdbf;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+max-width:500px;
+}
+
+.textbox p{
+font-size:16px;
 line-height:1.6;
 color:#f0f0f0;
 }
 
-.btn{
-display:inline-block;
+.btn-box{
 margin-top:25px;
+}
+
+.btn{
 padding:12px 25px;
 background:#06fdbf;
+margin-left: 65vh;
 color:black;
-text-decoration:none;
+border:none;
 font-weight:bold;
 border-radius:5px;
+cursor:pointer;
+font-size:15px;
 }
 
 .btn:hover{
 background:#fffb00;
 }
 
-.banner img {
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.banner img{
+width:100%;
+max-width:520px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(241,241,241,0.5);
 }
 
 footer{
@@ -137,6 +148,7 @@ color:white;
 <header>
 <img src="BMB.png" class="logo">
 <div class="title">GS Bumba TSS</div>
+
 <nav>
 <a href="home.html">Home</a>
 <a href="AboutUs.html">About Us</a>
@@ -150,26 +162,38 @@ color:white;
 </header>
 
 <section class="hero">
+
 <div>
+
 <h2 id="type"></h2>
+
+<div class="textbox">
 <p>
 GS Bumba TSS provides students with quality education, knowledge,
 skills and Rwandan values required on the labor market. The school
 also prepares learners for higher education while providing religious
 and spiritual guidance.
 </p>
-<a href="AboutUs.html" class="btn">Learn More</a>
+</div>
+
+<div class="btn-box">
+<button class="btn" onclick="window.location.href='AboutUs.html'">
+Learn More
+</button>
+</div>
+
 </div>
 
 <div class="banner">
-<img src="Banner@.png" alt="School Banner">
+<img src="banner.png" alt="School Banner">
 </div>
+
 </section>
 
 <script>
 const text="Welcome to GS Bumba TSS. You are lucky to choose this school because we provide quality education, practical skills and values needed for the future.";
 let i=0;
-const speed=50;
+const speed=40;
 const el=document.getElementById("type");
 
 function typeWriter(){
@@ -183,11 +207,13 @@ typeWriter();
 </script>
 
 <footer>
+
 <p>© 2026 GS Bumba TSS — All Rights Reserved</p>
 <p>Designed by <strong>Edmond Gikundiro</strong></p>
 <p>Email: gsbumba2011@yahoo.fr / gsbumba.rutsiro@gmail.com</p>
 <p>Tel: +250 788 787 786</p>
 <p>Location: Rutsiro District, Western Province, Rwanda</p>
+
 <nav>
 <a href="home.html">Home</a>
 <a href="AboutUs.html">About Us</a>
@@ -198,6 +224,7 @@ typeWriter();
 <a href="annoucement.html">Announcement</a>
 <a href="Facility.html">Facilities</a>
 </nav>
+
 </footer>
 
 </body>
